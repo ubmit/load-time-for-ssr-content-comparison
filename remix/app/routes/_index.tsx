@@ -11,8 +11,10 @@ export async function loader() {
   const data = (await response.json()) as Array<Todo>;
   return json({ data });
 }
+
 export default function Todos() {
   const { data } = useLoaderData<typeof loader>();
+
   return (
     <main>
       <h1>Todos</h1>
