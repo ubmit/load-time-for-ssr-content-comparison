@@ -1,5 +1,3 @@
-import type { PageLoad } from './$types';
-
 type Todo = {
 	id: number;
 	title: string;
